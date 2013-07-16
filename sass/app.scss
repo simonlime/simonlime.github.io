@@ -1,0 +1,249 @@
+$text-color: #888;
+$topbar-bg: #fff;
+$topbar-link-color: #D64545;
+$topbar-link-color-hover: #fff;
+$topbar-link-color-active: #fff;
+$topbar-height: 100px;
+$topbar-link-font-size: emCalc(15px);
+$topbar-link-weight: 400;
+
+
+$button-border-width: 0;
+
+// Global Foundation Settings
+@import "settings";
+
+$row-width: emCalc(900px) !default; 
+
+// Comment out this import if you are customizing you imports below
+@import "foundation";
+
+
+.bg-img {
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background: black;
+	background-position: center center;
+}
+
+body {
+	padding: 0;
+}
+
+h1 {
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 24px;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-family: "Lato", "Helvetica Neue", sans-serif;
+	font-size: 18px;
+	font-weight: 100;
+	color: $text-color;
+}
+h4 {
+	font-weight: 400;
+	font-family: "Lato", "Helvetica Neue", sans-serif;
+	color: $text-color;
+	font-size: 22px;
+}
+.wrapper h4 {
+	margin-bottom: 40px;
+}
+h5 {
+	font-family: "Lato", "Helvetica Neue", sans-serif;;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+p {
+	font-family: "Lato", "Helvetica Neue", sans-serif;;
+	color: $text-color;
+	font-size: 16px;
+}
+
+hr {
+	border-top: 8px solid #E24D4D;
+	margin: 0;
+}
+.name h1{
+	color: #D64545;
+}
+.black {
+	background-color: $text-color;
+	color: white;
+	padding: 10px;
+}
+
+.wrapper {
+	padding: 50px 0 50px 0;
+}
+
+#graph {
+	opacity: 0.8;
+}
+
+.top-bar li a {
+	font-family: 'Lato', sans-serif;
+}
+
+#hero {
+	background-color: #2e2e2e;
+	background: url('../images/hero.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+#hero img {
+	margin: 0 0 25px 0;
+}
+
+#hero-content {
+	padding: 100px 0 100px 0;
+}
+.dark {
+	color: white;
+}
+
+#contact {
+/*	background: url('../images/map.png') no-repeat center bottom fixed; 
+*	-webkit-background-size: 100% auto;
+*	-moz-background-size: 100% auto;
+*	-o-background-size: 100% auto;
+*	background-size: 100% auto;*/
+	background-color: #2d2d2d;
+}
+
+#contact h5 {
+	color: #fff;
+}
+
+#contact p {
+	color: #222;
+	margin: 0;
+}
+
+.btn {
+  @include button-base;
+  @include button-size;
+  @include button-style(#D64545, 4px, false);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.btn span {
+	display: inline-block;
+	padding: 4px 0 4px 24px;
+	background: url('../images/mail.png') no-repeat left;
+}
+
+strong {
+	font-weight: 400;
+	font-size: emCalc(18px);
+}
+.amp {
+	font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
+	font-style: italic;
+	font-weight: normal;
+	color: #D64545;
+}
+#nav .right {
+	border-width: 0;
+	background-color: transparent;
+}
+
+#nav .scroll:hover {
+	background-color: #000;
+}
+
+#skills p {
+	margin-top: 10px;
+}
+
+::selection {
+	background: #ffb7b7; /* Safari */
+	color: #fff;
+}
+::-moz-selection {
+	background: #ffb7b7; /* Firefox */
+	color: #fff;
+}
+
+.success {
+	display: none;
+}
+.title-area h1 {
+	color: #fff;
+	font-weight: 800;
+}
+
+.img-wrap {
+	overflow:hidden;
+	position:relative;
+	width: 280px;
+	height: 200px;
+	background-color: #fff;
+}
+.img-overlay {
+	padding: 10px;
+	background-color: #2d2d2d;
+	bottom:0;
+	color:#fff;
+	opacity:0;
+	filter: alpha(opacity = 0);
+	position:absolute;
+	width:100%;
+	height: 100%;
+	z-index:500;
+	text-align: left;
+}
+.img-wrap h5, .img-wrap p{
+	color: #fff;
+}
+.img-wrap:hover .img-overlay {
+	opacity:0.85;
+	filter: alpha(opacity = 85);
+	transition:opacity 0.1s;
+	-moz-transition:opacity 0.1s;
+	-webkit-transition:opacity 0.1s;
+}
+
+#contact h5 {
+	display: inline-block;
+	padding: 4px 0 4px 50px;
+	background: url('../images/mail.png') no-repeat left;
+}
+
+#contact h5:hover {
+	color: #D64545;
+}
+
+#about {
+	background-color: #fff; 
+}
+
+.sprites {
+	margin-bottom: 20px
+}
+.mail {
+	margin-top: 40px
+}
+#projects {
+	background-color: #D64545;
+}
+.shadow {
+	-moz-box-shadow:    1px 0px 1px 0px $text-color;
+  	-webkit-box-shadow: 1px 0px 1px 0px $text-color;
+  	box-shadow:         1px 0px 1px 0px $text-color;
+}
+#about a {
+	color: #D64545;
+}
