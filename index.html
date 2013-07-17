@@ -26,8 +26,11 @@
 	        	}); 
 	    	});
 	    	$('.bgmask').show();
-	    	$('#hero').css('backgroundImage', "url('images/hero.jpg')");
-	    	$('.bgmask').fadeOut('slow');
+	    	// Load the image and show when it has been completely loaded
+	    	$('<img/>').load(function() {
+   				$("#hero").css('backgroundImage', "url('images/hero.jpg')");
+   				$('.bgmask').fadeOut('slow');
+   			}).attr('src', 'images/hero.jpg');
 		}); 
 	</script>
 	<meta charset="utf-8" />
