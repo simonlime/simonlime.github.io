@@ -24,7 +24,10 @@
 		            // Move the background
 		            $bgobj.css({ backgroundPosition: coords });
 	        	}); 
-	    	});    
+	    	});
+	    	$('.bgmask').show();
+	    	$('#hero').css('backgroundImage', "url('images/hero.jpg')");
+	    	$('.bgmask').fadeOut('slow');
 		}); 
 	</script>
 	<meta charset="utf-8" />
@@ -47,6 +50,7 @@
 		</nav>
 	</div>
 	<div id="hero" class="padded bg-img container">
+		<div class="bgmask"></div>
 		<div class="row text-center" id="hero-content">
 			<div class="12-small columns" >
 				<img src="images/logo.png">
