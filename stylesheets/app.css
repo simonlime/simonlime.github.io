@@ -5557,13 +5557,13 @@ hr {
 
 /* line 94, ../sass/app.scss */
 #hero {
-  background-color: #2b2b2b;
   background: no-repeat top center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   position: relative;
+  background-color: #2b2b2b;
 }
 
 /* line 103, ../sass/app.scss */
