@@ -5464,7 +5464,7 @@ table tfoot tr td {
   max-width: 800px;
 }
 
-/* line 22, ../sass/app.scss */
+/* line 24, ../sass/app.scss */
 .bg-img {
   position: relative;
   background-size: cover;
@@ -5473,12 +5473,12 @@ table tfoot tr td {
   background-position: center center;
 }
 
-/* line 30, ../sass/app.scss */
+/* line 32, ../sass/app.scss */
 body {
   padding: 0;
 }
 
-/* line 34, ../sass/app.scss */
+/* line 36, ../sass/app.scss */
 h1 {
   margin: 0;
   font-family: 'Lato', sans-serif;
@@ -5487,7 +5487,7 @@ h1 {
   text-transform: uppercase;
 }
 
-/* line 42, ../sass/app.scss */
+/* line 44, ../sass/app.scss */
 h3 {
   font-family: "Lato", "Helvetica Neue", sans-serif;
   font-size: 18px;
@@ -5495,7 +5495,7 @@ h3 {
   color: #888888;
 }
 
-/* line 48, ../sass/app.scss */
+/* line 50, ../sass/app.scss */
 h4 {
   font-weight: 400;
   font-family: "Lato", "Helvetica Neue", sans-serif;
@@ -5503,59 +5503,59 @@ h4 {
   font-size: 22px;
 }
 
-/* line 54, ../sass/app.scss */
+/* line 56, ../sass/app.scss */
 .wrapper h4 {
   margin-bottom: 40px;
 }
 
-/* line 57, ../sass/app.scss */
+/* line 59, ../sass/app.scss */
 h5 {
   font-family: "Lato", "Helvetica Neue", sans-serif;
   font-weight: 400;
   font-size: 18px;
 }
 
-/* line 63, ../sass/app.scss */
+/* line 65, ../sass/app.scss */
 p {
   font-family: "Lato", "Helvetica Neue", sans-serif;
   color: #888888;
-  font-size: 16px;
+  font-size: 17px;
 }
 
-/* line 69, ../sass/app.scss */
+/* line 71, ../sass/app.scss */
 hr {
   border-top: 8px solid #E24D4D;
   margin: 0;
 }
 
-/* line 73, ../sass/app.scss */
+/* line 75, ../sass/app.scss */
 .name h1 {
   color: #D64545;
 }
 
-/* line 76, ../sass/app.scss */
+/* line 78, ../sass/app.scss */
 .black {
   background-color: #888888;
   color: white;
   padding: 10px;
 }
 
-/* line 82, ../sass/app.scss */
+/* line 84, ../sass/app.scss */
 .wrapper {
   padding: 50px 0 50px 0;
 }
 
-/* line 86, ../sass/app.scss */
+/* line 88, ../sass/app.scss */
 #graph {
   opacity: 0.8;
 }
 
-/* line 90, ../sass/app.scss */
+/* line 92, ../sass/app.scss */
 .top-bar li a {
   font-family: 'Lato', sans-serif;
 }
 
-/* line 94, ../sass/app.scss */
+/* line 96, ../sass/app.scss */
 #hero {
   background: no-repeat top center;
   -webkit-background-size: cover;
@@ -5563,55 +5563,55 @@ hr {
   -o-background-size: cover;
   background-size: cover;
   position: relative;
-  background-color: #2b2b2b;
+  background-color: #2a2a2a;
 }
-
-/* line 103, ../sass/app.scss */
-#hero img {
+/* line 105, ../sass/app.scss */
+#hero#hero img {
   margin: 0 0 25px 0;
+  width: 160px;
 }
 
-/* line 107, ../sass/app.scss */
+/* line 111, ../sass/app.scss */
 #hero-content {
   padding: 100px 0 100px 0;
 }
 
-/* line 110, ../sass/app.scss */
+/* line 114, ../sass/app.scss */
 .bgmask {
   width: 100%;
   height: 100%;
-  background-color: #2b2b2b;
+  background-color: #2a2a2a;
   display: none;
   position: absolute;
 }
 
-/* line 117, ../sass/app.scss */
+/* line 121, ../sass/app.scss */
 .dark {
   color: white;
 }
 
-/* line 121, ../sass/app.scss */
+/* line 125, ../sass/app.scss */
 #contact {
   /*	background: url('../images/map.png') no-repeat center bottom fixed; 
   *	-webkit-background-size: 100% auto;
   *	-moz-background-size: 100% auto;
   *	-o-background-size: 100% auto;
   *	background-size: 100% auto;*/
-  background-color: #2b2b2b;
+  background-color: #2a2a2a;
 }
 
-/* line 130, ../sass/app.scss */
+/* line 134, ../sass/app.scss */
 #contact h5 {
   color: #fff;
 }
 
-/* line 134, ../sass/app.scss */
+/* line 138, ../sass/app.scss */
 #contact p {
   color: #222;
   margin: 0;
 }
 
-/* line 139, ../sass/app.scss */
+/* line 143, ../sass/app.scss */
 .btn {
   border-style: solid;
   border-width: 0;
@@ -5648,20 +5648,21 @@ hr {
   color: white;
 }
 
-/* line 149, ../sass/app.scss */
+/* line 153, ../sass/app.scss */
 .btn span {
   display: inline-block;
   padding: 4px 0 4px 24px;
-  background: url("../images/mail.png") no-repeat left;
+  background: url("../images/mail.svg") no-repeat left;
+  background-size: 16px;
 }
 
-/* line 155, ../sass/app.scss */
+/* line 160, ../sass/app.scss */
 strong {
   font-weight: 400;
   font-size: 1.125em;
 }
 
-/* line 159, ../sass/app.scss */
+/* line 164, ../sass/app.scss */
 .amp {
   font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
   font-style: italic;
@@ -5669,61 +5670,60 @@ strong {
   color: #D64545;
 }
 
-/* line 165, ../sass/app.scss */
+/* line 170, ../sass/app.scss */
 #nav .right {
   border-width: 0;
   background-color: transparent;
 }
 
-/* line 170, ../sass/app.scss */
+/* line 175, ../sass/app.scss */
 #nav .scroll:hover {
   background-color: #000;
 }
 
-/* line 174, ../sass/app.scss */
+/* line 179, ../sass/app.scss */
 #skills p {
   margin-top: 10px;
 }
 
-/* line 178, ../sass/app.scss */
+/* line 183, ../sass/app.scss */
 ::selection {
   background: #ffb7b7;
   /* Safari */
   color: #fff;
 }
 
-/* line 182, ../sass/app.scss */
+/* line 187, ../sass/app.scss */
 ::-moz-selection {
   background: #ffb7b7;
   /* Firefox */
   color: #fff;
 }
 
-/* line 187, ../sass/app.scss */
+/* line 192, ../sass/app.scss */
 .success {
   display: none;
 }
 
-/* line 190, ../sass/app.scss */
+/* line 195, ../sass/app.scss */
 .title-area h1 {
   color: #fff;
   font-weight: 800;
 }
 
-/* line 195, ../sass/app.scss */
+/* line 200, ../sass/app.scss */
 .img-wrap {
   overflow: hidden;
   position: relative;
-  width: 280px;
-  height: 200px;
-  background-color: #fff;
+  width: 100%;
   display: inline-block;
+  text-align: center;
+  background-color: #ffffff;
 }
 
-/* line 203, ../sass/app.scss */
+/* line 208, ../sass/app.scss */
 .img-overlay {
-  padding: 10px;
-  background-color: #2b2b2b;
+  background-color: #2a2a2a;
   bottom: 0;
   color: #fff;
   opacity: 0;
@@ -5733,62 +5733,70 @@ strong {
   height: 100%;
   z-index: 500;
   text-align: left;
+  padding: 10px;
 }
 
-/* line 216, ../sass/app.scss */
+/* line 221, ../sass/app.scss */
 .img-wrap h5, .img-wrap p {
   color: #fff;
 }
 
-/* line 219, ../sass/app.scss */
+/* line 225, ../sass/app.scss */
+.img-wrap p {
+  font-size: 13px;
+}
+
+/* line 229, ../sass/app.scss */
 .img-wrap:hover .img-overlay {
   opacity: 0.85;
   filter: alpha(opacity=85);
-  transition: opacity 0.1s;
-  -moz-transition: opacity 0.1s;
-  -webkit-transition: opacity 0.1s;
 }
 
-/* line 227, ../sass/app.scss */
+/* line 234, ../sass/app.scss */
+.img-wrap img {
+  width: 100%;
+}
+
+/* line 238, ../sass/app.scss */
 #contact h5 {
   display: inline-block;
   padding: 4px 0 4px 50px;
   background: url("../images/mail.png") no-repeat left;
 }
 
-/* line 233, ../sass/app.scss */
+/* line 244, ../sass/app.scss */
 #contact h5:hover {
   color: #D64545;
 }
 
-/* line 237, ../sass/app.scss */
+/* line 248, ../sass/app.scss */
 #about {
   background-color: #fff;
 }
 
-/* line 241, ../sass/app.scss */
+/* line 252, ../sass/app.scss */
 .sprites {
   margin-bottom: 20px;
 }
 
-/* line 244, ../sass/app.scss */
+/* line 255, ../sass/app.scss */
 .mail {
   margin-top: 40px;
 }
 
-/* line 247, ../sass/app.scss */
+/* line 258, ../sass/app.scss */
 #projects {
   background-color: #D64545;
 }
 
-/* line 250, ../sass/app.scss */
+/* line 261, ../sass/app.scss */
 .shadow {
   -moz-box-shadow: 1px 0px 1px 0px #888888;
   -webkit-box-shadow: 1px 0px 1px 0px #888888;
   box-shadow: 1px 0px 1px 0px #888888;
 }
 
-/* line 255, ../sass/app.scss */
+/* line 266, ../sass/app.scss */
 #about a {
   color: #D64545;
 }
