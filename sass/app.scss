@@ -3,7 +3,7 @@ $topbar-bg: #fff;
 $topbar-link-color: #D64545;
 $topbar-link-color-hover: #fff;
 $topbar-link-color-active: #fff;
-$topbar-height: 100px;
+$topbar-height: 80px;
 $topbar-link-font-size: emCalc(15px);
 $topbar-link-weight: 400;
 
@@ -35,10 +35,16 @@ body {
 
 h1 {
 	margin: 0;
-	font-family: 'Lato', sans-serif;
+	font-family: "Lato", "Helvetica Neue", sans-serif;
 	font-weight: 400;
 	font-size: 24px;
 	text-transform: uppercase;
+}
+
+h2 {
+	font-family: "Lato", "Helvetica Neue", sans-serif;
+	font-weight: 100;
+	font-size: 20px;
 }
 
 h3 {
@@ -57,13 +63,13 @@ h4 {
 	margin-bottom: 40px;
 }
 h5 {
-	font-family: "Lato", "Helvetica Neue", sans-serif;;
+	font-family: "Lato", "Helvetica Neue", sans-serif;
 	font-weight: 400;
 	font-size: 18px;
 }
 
 p {
-	font-family: "Lato", "Helvetica Neue", sans-serif;;
+	font-family: "Lato", "Helvetica Neue", sans-serif;
 	color: $text-color;
 	font-size: 17px;
 }
@@ -82,7 +88,7 @@ hr {
 }
 
 .wrapper {
-	padding: 50px 0 50px 0;
+	padding: 55px 0 55px 0;
 }
 
 #graph {
@@ -148,6 +154,7 @@ hr {
   font-size: 14px;
   font-weight: 400;
   margin: 0;
+  box-shadow: 0 3px 1px #D12626;
 }
 
 .btn span {
@@ -204,6 +211,7 @@ strong {
 	display: inline-block;
 	text-align: center;
 	background-color: #ffffff;
+	line-height: 0;
 }
 .img-overlay {
 	background-color: $dark-gray;
@@ -250,7 +258,38 @@ strong {
 }
 
 .sprites {
-	margin-bottom: 20px
+	margin-bottom: 20px;
+
+	a {
+		background-image: url('../images/sprites.svg');
+		width: 50px;
+		height: 50px;
+		display: inline-block;
+
+		&#twitter {
+			background-position: 0 0;
+
+			&:hover {
+				background-position: 0 -50px;
+			}
+		}
+
+		&#flickr {
+			background-position: -50px 0;
+
+			&:hover {
+				background-position: -50px -50px;
+			}
+		}
+
+		&#linkedin {
+			background-position: -100px 0;
+
+			&:hover {
+				background-position: -100px -50px;
+			}
+		}
+	}
 }
 .mail {
 	margin-top: 40px
@@ -265,4 +304,49 @@ strong {
 }
 #about a {
 	color: #D64545;
+}
+
+.graph-wrapper {
+	margin: 10px;
+	background-color: #d9d9d9;
+
+	&> div {
+
+		&:first-child {
+			background-color: $dark-gray;
+			
+			h2 {
+				color: #fff;
+			}
+
+			padding: 10px;
+	    }
+
+    	padding: 0 20px 20px 20px;
+    }
+
+    /*  The wrapper for the bar */
+	.graph {
+	    height: 20px;
+	    margin-top: 20px;
+	    background-color: #eee;
+	    text-align: left;
+	}
+
+	/*  The actual bar itself */
+	.graph-bar {
+	    float: left;
+	    width: 0;
+	    height: 100%;
+	    color: #ffffff;
+	    -webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	    font-family: "Lato", "Helvetica Neue", sans-serif;
+	    padding: 0 5px;
+
+	    .percentage {
+	    	float: right;
+	    }
+	}
 }
