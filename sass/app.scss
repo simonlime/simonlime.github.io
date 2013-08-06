@@ -33,37 +33,34 @@ body {
 	padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Lato", "Helvetica Neue", sans-serif;
+}
+
 h1 {
 	margin: 0;
-	font-family: "Lato", "Helvetica Neue", sans-serif;
 	font-weight: 400;
 	font-size: 24px;
 	text-transform: uppercase;
 }
 
 h2 {
-	font-family: "Lato", "Helvetica Neue", sans-serif;
 	font-weight: 100;
 	font-size: 20px;
 }
 
 h3 {
-	font-family: "Lato", "Helvetica Neue", sans-serif;
 	font-size: 18px;
 	font-weight: 100;
 	color: $text-color;
 }
 h4 {
 	font-weight: 400;
-	font-family: "Lato", "Helvetica Neue", sans-serif;
 	color: $text-color;
 	font-size: 22px;
 }
-.wrapper h4 {
-	margin-bottom: 40px;
-}
+
 h5 {
-	font-family: "Lato", "Helvetica Neue", sans-serif;
 	font-weight: 400;
 	font-size: 18px;
 }
@@ -88,7 +85,11 @@ hr {
 }
 
 .wrapper {
-	padding: 55px 0 55px 0;
+	padding: 60px 0 60px 0;
+	
+	h4 {
+		margin-bottom: 40px;
+	}
 }
 
 #graph {
@@ -135,39 +136,41 @@ hr {
 *	-o-background-size: 100% auto;
 *	background-size: 100% auto;*/
 	background-color: $dark-gray;
-}
 
-#contact h5 {
-	color: #fff;
-}
+	h5 {
+		color: #fff;
+	}
 
-#contact p {
-	color: #222;
-	margin: 0;
+	p {
+		color: #222;
+		margin: 0;
+	}
 }
 
 .btn {
-  @include button-base;
-  @include button-size;
-  @include button-style(#D64545, 4px, false);
-  color: #fff;
-  font-size: 14px;
-  font-weight: 400;
-  margin: 0;
-  box-shadow: 0 3px 1px #D12626;
+	@include button-base;
+	@include button-size;
+	@include button-style(#D64545, 4px, false);
+	color: #fff;
+	font-size: 14px;
+	font-weight: 400;
+	margin: 0;
+	box-shadow: 0 3px 1px #D12626;
+
+	span {
+		display: inline-block;
+		padding: 4px 0 4px 24px;
+		background: url('../images/mail.svg') no-repeat left;
+		background-size: 16px;
+	}
 }
 
-.btn span {
-	display: inline-block;
-	padding: 4px 0 4px 24px;
-	background: url('../images/mail.svg') no-repeat left;
-	background-size: 16px;
-}
 
 strong {
 	font-weight: 400;
 	font-size: emCalc(18px);
 }
+
 .amp {
 	font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
 	font-style: italic;
@@ -175,12 +178,8 @@ strong {
 	color: #D64545;
 }
 #nav .right {
-	border-width: 0;
-	background-color: transparent;
-}
-
-#nav .scroll:hover {
-	background-color: #000;
+		border-width: 0;
+		background-color: transparent;
 }
 
 #skills p {
@@ -212,6 +211,23 @@ strong {
 	text-align: center;
 	background-color: #ffffff;
 	line-height: 0;
+
+	h5, p {
+		color: #fff;
+	}
+
+	p {
+		font-size: 13px;
+	}
+
+	&:hover .img-overlay {
+		opacity:0.85;
+		filter: alpha(opacity = 85);
+	}
+
+	img {
+		width: 100%;
+	}
 }
 .img-overlay {
 	background-color: $dark-gray;
@@ -226,31 +242,17 @@ strong {
 	text-align: left;
 	padding: 10px;
 }
-.img-wrap h5, .img-wrap p{
-	color: #fff;
-}
 
-.img-wrap p {
-	font-size: 13px;
-}
-
-.img-wrap:hover .img-overlay {
-	opacity:0.85;
-	filter: alpha(opacity = 85);
-}
-
-.img-wrap img {
-	width: 100%;
-}
-
-#contact h5 {
-	display: inline-block;
-	padding: 4px 0 4px 50px;
-	background: url('../images/mail.png') no-repeat left;
-}
-
-#contact h5:hover {
-	color: #D64545;
+#contact {
+	h5 {
+		display: inline-block;
+		padding: 4px 0 4px 50px;
+		background: url('../images/mail.png') no-repeat left;	
+		
+		&:hover {
+			color: #D64545;
+		}
+	}
 }
 
 #about {
