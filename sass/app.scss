@@ -35,6 +35,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Lato", "Helvetica Neue", sans-serif;
+	color: $text-color;
 }
 
 h1 {
@@ -57,12 +58,12 @@ h3 {
 h4 {
 	font-weight: 400;
 	color: $text-color;
-	font-size: 22px;
+	font-size: 18px;
 }
 
 h5 {
 	font-weight: 400;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 p {
@@ -178,12 +179,27 @@ strong {
 	color: #D64545;
 }
 #nav .right {
-		border-width: 0;
-		background-color: transparent;
+	border-width: 0;
+	background-color: transparent;
 }
 
-#skills p {
-	margin-top: 10px;
+#skills {
+	p {
+		margin-top: 10px;
+	}
+
+	h2 {
+		color: #D64545;
+	}
+	h5 {
+		margin-bottom: 45px;
+	}
+}
+
+#skills, #projects {
+	h2 {
+		font-weight: 400;
+	}
 }
 
 ::selection {
@@ -300,6 +316,10 @@ strong {
 }
 #projects {
 	background-color: #D64545;
+	h2 {
+		color: #eee;
+		margin-bottom: 45px;
+	}
 }
 .shadow {
 	-moz-box-shadow:    1px 0px 1px 0px $text-color;
