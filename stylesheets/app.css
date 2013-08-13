@@ -5690,41 +5690,45 @@ strong {
   color: #D64545;
 }
 /* line 194, ../sass/app.scss */
+#skills h3 {
+  color: #fff;
+}
+/* line 197, ../sass/app.scss */
 #skills h5 {
   margin-bottom: 45px;
 }
 
-/* line 200, ../sass/app.scss */
+/* line 203, ../sass/app.scss */
 #skills h2, #projects h2 {
   font-weight: 400;
 }
 
-/* line 205, ../sass/app.scss */
+/* line 208, ../sass/app.scss */
 ::selection {
   background: #ffb7b7;
   /* Safari */
   color: #fff;
 }
 
-/* line 209, ../sass/app.scss */
+/* line 212, ../sass/app.scss */
 ::-moz-selection {
   background: #ffb7b7;
   /* Firefox */
   color: #fff;
 }
 
-/* line 214, ../sass/app.scss */
+/* line 217, ../sass/app.scss */
 .success {
   display: none;
 }
 
-/* line 217, ../sass/app.scss */
+/* line 220, ../sass/app.scss */
 .title-area h1 {
   color: #fff;
   font-weight: 800;
 }
 
-/* line 222, ../sass/app.scss */
+/* line 225, ../sass/app.scss */
 .img-wrap {
   overflow: hidden;
   position: relative;
@@ -5734,25 +5738,25 @@ strong {
   background-color: #ffffff;
   line-height: 0;
 }
-/* line 231, ../sass/app.scss */
+/* line 234, ../sass/app.scss */
 .img-wrap h5, .img-wrap p {
   color: #fff;
 }
-/* line 235, ../sass/app.scss */
+/* line 238, ../sass/app.scss */
 .img-wrap p {
   font-size: 13px;
 }
-/* line 239, ../sass/app.scss */
+/* line 242, ../sass/app.scss */
 .img-wrap:hover .img-overlay {
   opacity: 0.85;
   filter: alpha(opacity=85);
 }
-/* line 244, ../sass/app.scss */
+/* line 247, ../sass/app.scss */
 .img-wrap img {
   width: 100%;
 }
 
-/* line 248, ../sass/app.scss */
+/* line 251, ../sass/app.scss */
 .img-overlay {
   background-color: #2a2a2a;
   bottom: 0;
@@ -5767,113 +5771,113 @@ strong {
   padding: 10px;
 }
 
-/* line 263, ../sass/app.scss */
+/* line 266, ../sass/app.scss */
 #contact h5 {
   display: inline-block;
   padding: 4px 0 4px 50px;
   background: url("../images/mail.png") no-repeat left;
 }
-/* line 268, ../sass/app.scss */
+/* line 271, ../sass/app.scss */
 #contact h5:hover {
   color: #D64545;
 }
 
-/* line 275, ../sass/app.scss */
+/* line 278, ../sass/app.scss */
 #about img {
   margin-top: 20px;
 }
 
-/* line 280, ../sass/app.scss */
+/* line 283, ../sass/app.scss */
 .sprites {
   margin-bottom: 20px;
 }
-/* line 283, ../sass/app.scss */
+/* line 286, ../sass/app.scss */
 .sprites a {
   background-image: url("../images/sprites.svg");
   width: 50px;
   height: 50px;
   display: inline-block;
 }
-/* line 289, ../sass/app.scss */
+/* line 292, ../sass/app.scss */
 .sprites a#twitter {
   background-position: 0 0;
 }
-/* line 292, ../sass/app.scss */
+/* line 295, ../sass/app.scss */
 .sprites a#twitter:hover {
   background-position: 0 -50px;
 }
-/* line 297, ../sass/app.scss */
+/* line 300, ../sass/app.scss */
 .sprites a#flickr {
   background-position: -50px 0;
 }
-/* line 300, ../sass/app.scss */
+/* line 303, ../sass/app.scss */
 .sprites a#flickr:hover {
   background-position: -50px -50px;
 }
-/* line 305, ../sass/app.scss */
+/* line 308, ../sass/app.scss */
 .sprites a#linkedin {
   background-position: -100px 0;
 }
-/* line 308, ../sass/app.scss */
+/* line 311, ../sass/app.scss */
 .sprites a#linkedin:hover {
   background-position: -100px -50px;
 }
 
-/* line 314, ../sass/app.scss */
+/* line 317, ../sass/app.scss */
 .mail {
   margin-top: 40px;
 }
 
-/* line 317, ../sass/app.scss */
+/* line 320, ../sass/app.scss */
 #projects {
   background-color: #D64545;
 }
-/* line 319, ../sass/app.scss */
+/* line 322, ../sass/app.scss */
 #projects h2 {
   color: #eee;
   margin-bottom: 45px;
 }
 
-/* line 324, ../sass/app.scss */
+/* line 327, ../sass/app.scss */
 .shadow {
   -moz-box-shadow: 1px 0px 1px 0px #888888;
   -webkit-box-shadow: 1px 0px 1px 0px #888888;
   box-shadow: 1px 0px 1px 0px #888888;
 }
 
-/* line 329, ../sass/app.scss */
+/* line 332, ../sass/app.scss */
 #about a {
   color: #D64545;
 }
 
-/* line 333, ../sass/app.scss */
+/* line 336, ../sass/app.scss */
 .graph-wrapper {
   margin: 10px;
   background-color: #d9d9d9;
   /*  The wrapper for the bar */
   /*  The actual bar itself */
 }
-/* line 337, ../sass/app.scss */
+/* line 340, ../sass/app.scss */
 .graph-wrapper > div {
   padding: 0 20px 20px 20px;
 }
-/* line 339, ../sass/app.scss */
+/* line 342, ../sass/app.scss */
 .graph-wrapper > div:first-child {
   background-color: #2a2a2a;
   padding: 10px;
 }
-/* line 342, ../sass/app.scss */
+/* line 345, ../sass/app.scss */
 .graph-wrapper > div:first-child h2 {
   color: #fff;
 }
-/* line 353, ../sass/app.scss */
+/* line 356, ../sass/app.scss */
 .graph-wrapper .graph {
   height: 20px;
   margin-top: 20px;
   background-color: #eee;
   text-align: left;
 }
-/* line 361, ../sass/app.scss */
+/* line 364, ../sass/app.scss */
 .graph-wrapper .graph-bar {
   float: left;
   width: 0;
@@ -5885,7 +5889,7 @@ strong {
   font-family: "Lato", "Helvetica Neue", sans-serif;
   padding: 0 5px;
 }
-/* line 372, ../sass/app.scss */
+/* line 375, ../sass/app.scss */
 .graph-wrapper .graph-bar .percentage {
   float: right;
 }
