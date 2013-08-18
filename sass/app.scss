@@ -336,6 +336,21 @@ strong {
 .graph-wrapper {
 	margin: 10px;
 	background-color: #d9d9d9;
+	
+	h3 {
+		margin: 0;
+		line-height: 35px;
+		padding-left: 40px;
+
+	}
+
+	.code {	
+		background: url('../images/code.svg') no-repeat;
+	}
+
+	.web {	
+		background: url('../images/cloud.svg') no-repeat;
+	}
 
 	&> div {
 

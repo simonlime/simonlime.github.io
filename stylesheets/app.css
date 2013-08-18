@@ -5858,26 +5858,40 @@ strong {
   /*  The actual bar itself */
 }
 /* line 340, ../sass/app.scss */
+.graph-wrapper h3 {
+  margin: 0;
+  line-height: 35px;
+  padding-left: 40px;
+}
+/* line 347, ../sass/app.scss */
+.graph-wrapper .code {
+  background: url("../images/code.svg") no-repeat;
+}
+/* line 351, ../sass/app.scss */
+.graph-wrapper .web {
+  background: url("../images/cloud.svg") no-repeat;
+}
+/* line 355, ../sass/app.scss */
 .graph-wrapper > div {
   padding: 0 20px 20px 20px;
 }
-/* line 342, ../sass/app.scss */
+/* line 357, ../sass/app.scss */
 .graph-wrapper > div:first-child {
   background-color: #2a2a2a;
   padding: 10px;
 }
-/* line 345, ../sass/app.scss */
+/* line 360, ../sass/app.scss */
 .graph-wrapper > div:first-child h2 {
   color: #fff;
 }
-/* line 356, ../sass/app.scss */
+/* line 371, ../sass/app.scss */
 .graph-wrapper .graph {
   height: 20px;
   margin-top: 20px;
   background-color: #eee;
   text-align: left;
 }
-/* line 364, ../sass/app.scss */
+/* line 379, ../sass/app.scss */
 .graph-wrapper .graph-bar {
   float: left;
   width: 0;
@@ -5889,7 +5903,7 @@ strong {
   font-family: "Lato", "Helvetica Neue", sans-serif;
   padding: 0 5px;
 }
-/* line 375, ../sass/app.scss */
+/* line 390, ../sass/app.scss */
 .graph-wrapper .graph-bar .percentage {
   float: right;
 }
