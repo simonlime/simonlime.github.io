@@ -145,32 +145,40 @@
 					</div>
 					<div>
 						<div class="graph">
-							<div class="graph-bar" style="width: 90%; background-color: #1FC96C">
-								JavaScript
+							<div class="graph-bar" style="background-color: #1FC96C" data-percent="90%">
+								<h6>
+									JavaScript
+								</h6>
 								<span class="percentage">
 									90%
 								</span>
 							</div>
 						</div>
 						<div class="graph">
-							<div class="graph-bar" style="width: 90%; background-color: #1FC96C">
-								YUI
+							<div class="graph-bar" style="background-color: #1FC96C" data-percent="90%">
+								<h6>
+									YUI
+								</h6>
 								<span class="percentage">
 									90%
 								</span>
 							</div>
 						</div>
 						<div class="graph">
-							<div class="graph-bar" style="width: 80%; background-color: #2C94D8">
-								JQuery
+							<div class="graph-bar" style="background-color: #2C94D8" data-percent="80%">
+								<h6>
+									JQuery
+								</h6>
 								<span class="percentage">
 									80%
 								</span>
 							</div>
 						</div>
 						<div class="graph">
-							<div class="graph-bar" style="width: 80%; background-color: #2C94D8">
-								MySQL
+							<div class="graph-bar" style="background-color: #2C94D8" data-percent="80%">
+								<h6>
+									MySQL
+								</h6>
 								<span class="percentage">
 									80%
 								</span>
@@ -188,32 +196,40 @@
 					</div>
 					<div>
 						<div class="graph">
-							<div class="graph-bar" style="width: 95%; background-color: #1FC96C">
-								Java
+							<div class="graph-bar" style="background-color: #1FC96C" data-percent="95%">
+								<h6>
+									Java
+								</h6>
 								<span class="percentage">
 									95%
 								</span>
 							</div>
 						</div>
 						<div class="graph">
-							<div class="graph-bar" style="width: 85%; background-color: #1FC96C">
-								C
+							<div class="graph-bar" style="background-color: #1FC96C" data-percent="85%">
+								<h6>
+									C
+								</h6>
 								<span class="percentage">
 									85%
 								</span>
 							</div>
 						</div>
 						<div class="graph">
-							<div class="graph-bar" style="width: 80%; background-color: #2C94D8">
-								PHP
+							<div class="graph-bar" style="background-color: #2C94D8" data-percent="80%">
+								<h6>
+									PHP
+								</h6>
 								<span class="percentage">
 									80%
 								</span>
 							</div>
 						</div>
 						<div class="graph">
-							<div class="graph-bar" style="width: 70%; background-color: #D64545">
-								C++
+							<div class="graph-bar" style="background-color: #D64545" data-percent="70%">
+								<h6>
+									C++
+								</h6>
 								<span class="percentage">
 									70%
 								</span>
@@ -260,6 +276,13 @@
 		$('#about').waypoint(function() {
   			$('.contain-to-grid').slideToggle(200);
 		});
+
+		$('.graph-wrapper').waypoint(function() {
+			$('.graph-wrapper').css('opacity', 1);
+  			$('.graph-bar').each(function () {
+  				$(this).css('width', $(this).attr('data-percent'));
+  			});
+		}, { offset: '100%' });
   </script>
   <script src="javascripts/vendor/spin.min.js" type="text/javascript"></script>
   <script src="javascripts/vendor/form.js" type="text/javascript"></script>

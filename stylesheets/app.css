@@ -5854,56 +5854,66 @@ strong {
 .graph-wrapper {
   margin: 10px;
   background-color: #d9d9d9;
+  opacity: 0.5;
+  transition: all 1s linear;
   /*  The wrapper for the bar */
   /*  The actual bar itself */
 }
-/* line 340, ../sass/app.scss */
+/* line 341, ../sass/app.scss */
 .graph-wrapper h3 {
   margin: 0;
   line-height: 35px;
   padding-left: 40px;
 }
-/* line 347, ../sass/app.scss */
+/* line 348, ../sass/app.scss */
 .graph-wrapper .code {
   background: url("../images/code.svg") no-repeat;
 }
-/* line 351, ../sass/app.scss */
+/* line 352, ../sass/app.scss */
 .graph-wrapper .web {
   background: url("../images/cloud.svg") no-repeat;
 }
-/* line 355, ../sass/app.scss */
+/* line 356, ../sass/app.scss */
 .graph-wrapper > div {
   padding: 0 20px 20px 20px;
 }
-/* line 357, ../sass/app.scss */
+/* line 358, ../sass/app.scss */
 .graph-wrapper > div:first-child {
   background-color: #2a2a2a;
   padding: 10px;
 }
-/* line 360, ../sass/app.scss */
+/* line 361, ../sass/app.scss */
 .graph-wrapper > div:first-child h2 {
   color: #fff;
 }
-/* line 371, ../sass/app.scss */
+/* line 372, ../sass/app.scss */
 .graph-wrapper .graph {
   height: 20px;
   margin-top: 20px;
   background-color: #eee;
   text-align: left;
 }
-/* line 379, ../sass/app.scss */
+/* line 380, ../sass/app.scss */
 .graph-wrapper .graph-bar {
   float: left;
   width: 0;
   height: 100%;
-  color: #ffffff;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-family: "Lato", "Helvetica Neue", sans-serif;
-  padding: 0 5px;
+  overflow: hidden;
+  transition: all 0.6s linear;
 }
-/* line 390, ../sass/app.scss */
+/* line 391, ../sass/app.scss */
+.graph-wrapper .graph-bar h6 {
+  color: #fff;
+  padding: 0 5px;
+  font-weight: normal;
+  margin: 0;
+  line-height: 20px;
+}
+/* line 398, ../sass/app.scss */
 .graph-wrapper .graph-bar .percentage {
   float: right;
 }
