@@ -97,8 +97,14 @@ hr {
 	opacity: 0.8;
 }
 
-.top-bar li a {
-	font-family: 'Lato', sans-serif;
+.contain-to-grid {
+	transition: top 0.2s linear;
+}
+
+.top-bar {
+	li a {
+		font-family: 'Lato', sans-serif;
+	}
 }
 
 #hero {
@@ -399,4 +405,16 @@ strong {
 	    	float: right;
 	    }
 	}
+}
+
+@-webkit-keyframes btnPulse {
+  from { background-color: #D64545; }
+  50% { background-color: #E86F6F; }
+  to { background-color: #D64545; }
+}
+
+.top-bar .btn {
+  -webkit-animation-name: btnPulse;
+  -webkit-animation-duration: 1.6s;
+  -webkit-animation-iteration-count: infinite;
 }

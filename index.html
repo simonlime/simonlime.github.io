@@ -45,7 +45,7 @@
 
 </head>
 <body>
-	<div class="contain-to-grid shadow show-on-desktops" style="display: none; position:fixed; z-index:1000">
+	<div class="contain-to-grid shadow show-on-desktops" style="position: fixed;top: -80px; z-index:1000">
 		<nav class="top-bar" id="nav">
 		    <section class="top-bar-section right">
 			    <a href="mailto:simonli.me@gmail.com" class="btn"><span>Let's talk</span></a>
@@ -273,8 +273,11 @@
     $(document).foundation();
   </script>
   <script>
-		$('#about').waypoint(function() {
-  			$('.contain-to-grid').slideToggle(200);
+		$('#about').waypoint(function(direction) {
+			if (direction == 'down')
+  				$('.contain-to-grid').css('top', 0);
+  			else
+  				$('.contain-to-grid').css('top', '-80px');
 		});
 
 		$('.graph-wrapper').waypoint(function() {
