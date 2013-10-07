@@ -23,6 +23,8 @@ $row-width: emCalc(900px) !default;
 
 .bg-img {
 	position: relative;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background: black;
@@ -417,4 +419,5 @@ strong {
   -webkit-animation-name: btnPulse;
   -webkit-animation-duration: 1.6s;
   -webkit-animation-iteration-count: infinite;
+  top: -2px;
 }
