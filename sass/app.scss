@@ -415,9 +415,34 @@ strong {
   to { background-color: #D64545; }
 }
 
+@keyframes btnPulse {
+  from { background-color: #D64545; }
+  50% { background-color: #E86F6F; }
+  to { background-color: #D64545; }
+}
+
 .top-bar .btn {
-  -webkit-animation-name: btnPulse;
-  -webkit-animation-duration: 1.6s;
-  -webkit-animation-iteration-count: infinite;
-  top: -2px;
+	-webkit-animation-name:  btnPulse;
+	-moz-animation-name:  btnPulse;
+	-ms-animation-name:  btnPulse;
+	-o-animation-name:  btnPulse;
+	animation-name:  btnPulse;
+	-webkit-animation-duration: 1.6s;
+	-moz-animation-duration: 1.6s;
+	-ms-animation-duration: 1.6s;
+	-o-animation-duration: 1.6s;
+	animation-duration: 1.6s;
+	-webkit-animation-iteration-count:  infinite;
+	-moz-animation-iteration-count:  infinite;
+	-ms-animation-iteration-count:  infinite;
+	-o-animation-iteration-count:  infinite;
+	animation-iteration-count:  infinite;
+	top:  -2px;
+	&:hover {
+		-webkit-animation: none;
+		-moz-animation: none;
+		-ms-animation: none;
+		-o-animation: none;
+		animation: none;
+	}
 }
